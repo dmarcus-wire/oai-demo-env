@@ -3,3 +3,12 @@ kind: Component
 
 resources:
 - https://github.com/redhat-na-ssa/demo-ai-gitops-catalog/demos/rhoai-workshop-ready?ref=v0.11
+
+patches:
+  - target:
+      kind: Subscription
+      name: rhods-operator
+    patch: |-
+      - op: replace
+        path: /spec/channel
+        value: fast

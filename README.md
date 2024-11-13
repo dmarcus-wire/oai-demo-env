@@ -83,4 +83,12 @@ subscription.operators.coreos.com/openshift-pipelines-operator-rh created
 subscription.operators.coreos.com/servicemeshoperator created
 subscription.operators.coreos.com/serverless-operator created
 subscription.operators.coreos.com/rhods-operator created
-template.template.openshift.io/trition-serving-runtime created 
+template.template.openshift.io/trition-serving-runtime created
+5. update the channel on RHOAI operator
+6. kustomize build components/rhoai-ready/ > rendered.yaml and search for the rhods-operator subscription
+7. patch the components/rhoai-ready/kustomization.yaml
+8. oc apply -k components/rhoai-ready/ 
+9. approve the install plan
+10. install minio
+11. create dir apiVersion: kustomize.config.k8s.io/v1alpha1
+12. 

@@ -1,5 +1,16 @@
 # oai-demo-env
 
+## Steps
+```
+oc login to cluster
+
+# if ssh in and cloned
+until oc apply -k demos/default ; do : ; done
+
+# if not cloned
+until oc apply -k https://github.com/dmarcus-wire/oai-demo-env.git ; do : ; done
+```
+
 Attributes
 1. Web Terminal
 1. GPUs
@@ -12,4 +23,6 @@ Attributes
 1. Power monitoring
 1. Metering
 1. Observability
-
+    1. Cluster Observability Operator
+    1. Power Monitoring
+    1. Red Hat build of OpenTelemetry

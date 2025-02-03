@@ -20,14 +20,11 @@ Attributes
 1. NFD
 1. NVIDIA GPU
 1. DCGM Dashboard
+1. NVIDIA Triton
 1. RHOAI fast
-    1. User
-    1. Administrator
+1. DevSpaces
 1. Minio
 1. ACS
-1. Power monitoring
-1. Metering
 1. Observability
     1. Cluster Observability Operator
-    1. Power Monitoring
     1. Red Hat build of OpenTelemetry
